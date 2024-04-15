@@ -17,7 +17,7 @@ screen = pg.display.set_mode((c.SCREEN_WIDTH, c.SCREEN_HEIGHT))
 pg.display.set_caption("Tower Defense")
 
 # Załaduj obrazy
-map_image = pg.image.load('assets/maps/mapkurwawkoncu.png').convert_alpha()
+map_image = pg.image.load('assets/maps/map.png').convert_alpha()
 enemy1_image = pg.image.load('assets/enemies/enemy3.png').convert_alpha()
 enemy2_image = pg.image.load('assets/enemies/enemy2.png').convert_alpha()
 
