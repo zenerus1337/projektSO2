@@ -1,11 +1,15 @@
 import pygame as pg
 from pygame.math import Vector2
 import math
+import threading
 
 #klasa 'sprite' ma metode 'draw'
 class Enemy(pg.sprite.Sprite):
     def __init__(self, waypoints, image):
         pg.sprite.Sprite.__init__(self)
+
+        self.lock_image = threading.Lock()
+
         self.waypoints = waypoints
         self.pos = Vector2(self.waypoints[0])
         self.target_waypoint = 1
