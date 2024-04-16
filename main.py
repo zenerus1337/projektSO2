@@ -65,6 +65,7 @@ def spawn_enemy(enemy_image):
 enemy1 = threading.Thread(target=spawn_enemy, args=(Enemy, ) ).start()  # Przeciwnik typu 1 co 2 sekundy
 enemy2 = threading.Thread(target=spawn_enemy, args=(Enemy, ) ).start()  # Przeciwnik typu 2 co 2 sekundy
 
+#threadpool
 
 # Game loop
 run = True
