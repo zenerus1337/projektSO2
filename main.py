@@ -17,7 +17,7 @@ screen = pg.display.set_mode((c.SCREEN_WIDTH, c.SCREEN_HEIGHT))
 pg.display.set_caption("Tower Defense")
 
 # Załaduj obrazy
-map_image = pg.image.load('assets/maps/mapkurwawkoncu.png').convert_alpha()
+map_image = pg.image.load('assets/maps/map.png').convert_alpha()
 enemy_image = pg.image.load('assets/enemies/enemy1.png').convert_alpha()
 
 # Załaduj plik json ze ścieżką
@@ -42,6 +42,7 @@ def play_music(sciezka_do_pliku):
     # Odtwarzanie muzyki
     pg.mixer.music.load(sciezka_do_pliku)
     pg.mixer.music.play()
+    pg.mixer.music.set_volume(0)
 
 sciezka_do_pliku = "muzyka.mp3"  # Ścieżka do pliku audio
 
